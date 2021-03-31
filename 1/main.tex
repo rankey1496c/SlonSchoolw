@@ -1,0 +1,61 @@
+% neomake: skip
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{lipsum}
+
+
+\newcommand{\starcup}{$\sqcup$\kern-0.58em{$\star$}}
+
+\newcommand{\foo}[1]{
+    \begin{tikzpicture}[#1]
+        \draw (0,0) -- (1ex,1ex);
+    \end{tikzpicture}
+}
+
+\begin{document}
+    \section{Это секция}
+    {\LARGE Здравствуйте дорогой Мартин Алексеич!}\kern-30.5em
+    {\footnotesize Пишу вам сразу по приезду, прямо вот только что вошёл и сел писать.}
+
+    \begin{flushright}
+        $
+        \boldsymbol{
+            \left\langle
+            \frac{1\backslash2}{34}\Big|_0^2
+            \right)
+        }
+        $
+    \end{flushright}
+
+    \subsection{$\alpha$}
+    \textbf{\textit{Лабиринт}} (др.-греч. $\lambda\alpha\beta\upsilon\rho\iota\nu\theta o \varsigma$) ---
+    какая-либо структура (обычно в двухмерном или трёхмерном пространстве), состоящая из запутанных путей
+    к выходу (и/или путей, ведущих в тупик). 
+    \subsubsection{$\beta$}
+
+    \begin{multicols}{3}
+
+    $$\log\left(
+    \prod_{i=1}^{n} f_i(x)
+    \right) =
+    \sum\limits_{i=1}^{n} \log f_i(x)
+    $$
+
+    $$\pmb{\vec{a} = \frac{d\vec{v}}{dt}}$$
+
+    $$f'(x_0) = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}$$
+    \end{multicols}
+
+    \subsubsection{$\Omega$}
+    \begin{multicols}{2}
+        \lipsum[1-2]
+    \end{multicols}
+
+
+\end{document}
