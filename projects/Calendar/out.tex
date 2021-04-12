@@ -1,0 +1,24 @@
+\documentclass[a4paper, landscape]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[a4paper, margin=0px,landscape]{geometry}
+\usepackage{graphicx}
+\geometry{top=0mm,left=0mm, right=0mm, bottom=0mm}
+
+\newcommand{\Cellfill}[2]{\begin{minipage}[c][50mm][c]{30mm}
+			\begin{center}
+                #1 \\ #2
+			\end{center}
+	\end{minipage}}
+
+\setlength\parindent{0pt}
+
+\begin{document}
+
+\begin{center}
+	\begin{tabular}{c|c|c|c|c|c|c|c|}\cline{1-6}\multicolumn{1}{|c|}{\Cellfill{1}{заезд}}&\Cellfill{2}{qwe}&\Cellfill{3}{qwe}&\Cellfill{4}{qwe}&\Cellfill{5}{qwe}&\Cellfill{6}{qwe}\\\cline{1 - 6}
+&\Cellfill{7}{qwe}&\Cellfill{8}{qwe}&\Cellfill{9}{qwe}&\Cellfill{10}{qwe}&\Cellfill{11}{qwe}\\\cline{2-7}
+&\Cellfill{12}{qwe}&\Cellfill{13}{qwe}&\Cellfill{14}{qwe}&\Cellfill{15}{qwe}&\Cellfill{16}{qwe}&\Cellfill{17}{qwe}\\\cline{2-7}
+\end{tabular}
+\end{center}\end{document}
